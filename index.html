@@ -1,13 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- font-awsome  -->
+    <script src="https://kit.fontawesome.com/f65d705856.js" crossorigin="anonymous"></script>
     <!-- daisy-ui  -->
-    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-clr': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- google-font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- style  -->
+    <style>
+        .font-lato {
+            font-family: 'EB Garamond', serif;
+            font-family: 'Lato', sans-serif;
+        }
+
+        main p {
+            color: rgba(18, 18, 18, 0.60);
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-lato">
+    <header class="container mx-auto">
+        <!-- navbar  -->
+        <div class="navbar justify-between px-8 bg-primary-clr rounded-full mt-3">
+            <div class="">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About us </a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruit</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="navbar-center hidden lg:flex  text-white text-lg font-medium">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About us </a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All fruit</a></li>
+                </ul>
+            </div>
+            <!-- logo  -->
+            <a class="flex justify-center items-center gap-2" href="">
+                <img src="./images/logo.png" alt="">
+                </img>
+                <h1 class="font-bold text-[2.5rem] text-white">Fruit Burst</h1>
+            </a>
+            <!-- search bar  -->
+            <div class="relative">
+                <input type="search" placeholder="Search here"
+                    class="input input-bordered w-full max-w-2xl border-none " />
+                <div class="absolute right-0 pr-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <main></main>
+
+
 </body>
+
 </html>
