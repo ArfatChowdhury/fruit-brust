@@ -18,6 +18,8 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-clr': '#F85559',
+                        'primary-gradient': 'linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
+
                     }
                 }
             }
@@ -87,14 +89,114 @@
                     class="input input-bordered w-full max-w-2xl border-none " />
                 <div class="absolute right-0 pr-2 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                        <path
+                            d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                            stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
-                
             </div>
         </div>
+        <!-- banner  -->
+
+        <!-- carousal  -->
+        <div class="carousel w-full mt-3 rounded-lg z-10">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <img src="/images/banner1.png" class="w-full  " />
+                <div
+                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/banner2.png" class="w-full" />
+                <div
+                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/banner3.png" class="w-full" />
+                <div
+                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="/images/banner4.png" class="w-full" />
+                <div
+                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        
     </header>
-    <main></main>
+    <main>
+        <!-- fruit type  -->
+        <div class="w-10/12 mx-auto -my-16 relative z-20 rounded-lg bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 shadow-lg px-16 py-11">
+            <!-- fruit1 -->
+            <div>
+                <img src="./images/fruit1.png" alt="">
+                <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <!-- fruit2 -->
+            <div>
+                <img src="./images/fruit2.png" alt="">
+                <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <!-- fruit3 -->
+            <div>
+                <img src="./images/fruit3.png" alt="">
+                <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <!-- fruit4 -->
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <p class="text-xl font-medium">Strawberry</p>
+            </div>
+            <!-- fruit5 -->
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <p class="text-xl font-medium">Strawberry</p>
+            </div>
+        </div>
+    </main>
 
 
 </body>
