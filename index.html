@@ -47,7 +47,7 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- navbar  -->
-        <div class="navbar justify-between px-8 bg-primary-clr rounded-full mt-3">
+        <div class="navbar flex justify-between flex-row-reverse lg:flex-row px-8 lg:bg-primary-clr rounded-full mt-3">
             <div class="">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -69,7 +69,7 @@
 
 
             </div>
-            <div class="navbar-center hidden lg:flex  text-white text-lg font-medium">
+            <div class="navbar-start hidden lg:flex  justify-between text-white text-lg font-medium">
                 <ul class="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li><a>About us </a></li>
@@ -78,16 +78,16 @@
                 </ul>
             </div>
             <!-- logo  -->
-            <a class="flex justify-center items-center gap-2" href="">
-                <img src="./images/logo.png" alt="">
+            <a class="flex justify-center items-center  gap-2" href="">
+                <img class=" w-7 lg:w-auto" src="./images/logo.png" alt="">
                 </img>
-                <h1 class="font-bold text-[2.5rem] text-white">Fruit Burst</h1>
+                <h1 class="font-bold text-2xl lg:text-[2.5rem] lg:text-white">Fruit Burst</h1>
             </a>
             <!-- search bar  -->
-            <div class="relative">
+            <div class=" hidden lg:block md:hidden ">
                 <input type="search" placeholder="Search here"
                     class="input input-bordered w-full max-w-2xl border-none " />
-                <div class="absolute right-0 pr-2 ">
+                <div class="absolute top-[2.3rem] right-16 pr-2 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
                             d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
@@ -100,13 +100,13 @@
 
         <!-- carousal  -->
         <div class="carousel w-full mt-3 rounded-lg z-10 ">
-            <div id="slide1" class="carousel-item relative w-full ">
+            <div id="slide1" class="carousel-item relative h-48 lg:h-auto w-full ">
                 <img src="./images/banner1.png" class="w-full  " />
                 <div
-                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
-                    <p class="font-medium text-xl">We supply highly quality organic products</p>
-                    <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
+                    class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-2xl lg:text-7xl font-extrabold lg:mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-sm lg:text-xl">We supply highly quality organic products</p>
+                    <button class="bg-primary-clr px-8 py-4 rounded-lg lg:mt-6">Shop Now</button>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a>
@@ -116,9 +116,9 @@
             <div id="slide2" class="carousel-item relative w-full">
                 <img src="./images/banner2.png" class="w-full" />
                 <div
-                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
-                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-2xl lg:text-7xl font-extrabold lg:mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-sm lg:text-xl">We supply highly quality organic products</p>
                     <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -133,9 +133,9 @@
             <div id="slide3" class="carousel-item relative w-full">
                 <img src="./images/banner3.png" class="w-full" />
                 <div
-                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
-                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                    class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-2xl lg:text-7xl font-extrabold lg:mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-sm lg:text-xl">We supply highly quality organic products</p>
                     <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -150,9 +150,9 @@
             <div id="slide4" class="carousel-item relative w-full">
                 <img src="./images/banner4.png" class="w-full" />
                 <div
-                    class="text-center text-white absolute top-1/4 lg:w-[660px] lg:right-[50%] lg:left-1/4 mx-auto lg:px-16">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
-                    <p class="font-medium text-xl">We supply highly quality organic products</p>
+                class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
+                    <h1 class="text-2xl lg:text-7xl font-extrabold lg:mb-6">Exotic tastes at your doorstep</h1>
+                    <p class="font-medium text-sm lg:text-xl">We supply highly quality organic products</p>
                     <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -738,10 +738,10 @@
                     <div class="flex justify-center items-center space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
-                            <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
+                            <i class="fa-brands fa-gratipay" style="color: #b8b8b8;"></i>
                         </div>
                         <div class="space-y-2">
-                            <h2 class="text-2xl font-extrabold ">Dedicated Team</h2>
+                            <h2 class="text-2xl font-extrabold ">Fresh is Best</h2>
                             <hr class="lg:w-24">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -749,10 +749,10 @@
                     <div class="flex justify-center items-center space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
-                            <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
+                            <i class="fa-solid fa-gift" style="color: #bcbdbd;"></i>
                         </div>
                         <div class="space-y-2">
-                            <h2 class="text-2xl font-extrabold ">Dedicated Team</h2>
+                            <h2 class="text-2xl font-extrabold ">Gift Certificates</h2>
                             <hr class="lg:w-24">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -772,7 +772,7 @@
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
                         </div>
                         <div class="space-y-2">
-                            <h2 class="text-2xl font-extrabold ">Dedicated Team</h2>
+                            <h2 class="text-2xl font-extrabold ">The Benefits Only</h2>
                             <hr class="lg:w-24">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -783,7 +783,7 @@
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
                         </div>
                         <div class="space-y-2">
-                            <h2 class="text-2xl font-extrabold ">Dedicated Team</h2>
+                            <h2 class="text-2xl font-extrabold ">Integrated Supplier</h2>
                             <hr class="lg:w-24">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -794,7 +794,7 @@
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
                         </div>
                         <div class="space-y-2">
-                            <h2 class="text-2xl font-extrabold ">Dedicated Team</h2>
+                            <h2 class="text-2xl font-extrabold ">Sustainable Practice</h2>
                             <hr class="lg:w-24">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
