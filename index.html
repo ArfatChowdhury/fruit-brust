@@ -47,9 +47,11 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- navbar  -->
-        <div class="navbar flex justify-between flex-row-reverse lg:flex-row px-8 lg:bg-primary-clr rounded-full mt-3">
-            <div class="">
-                <div class="dropdown relative">
+
+        <!-- logo  -->
+        <div class=" bg-white lg:bg-primary-clr justify-between items-center py-4 px-4 rounded-none lg:rounded-full mt-3">
+            <div class="navbar justify-between  flex-row-reverse static lg:absolute mx-0 lg:-mx-16">
+                <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -58,48 +60,52 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black text-center rounded-box w-52 text-white text-lg font-medium right-0">
+                        class="menu menu-sm dropdown-content text-white mt-3 z-[1] p-2 shadow bg-black rounded-box w-52 right-0">
                         <li><a>Home</a></li>
                         <li><a>About us </a></li>
                         <li><a>Shop</a></li>
                         <li><a>All fruit</a></li>
                     </ul>
                 </div>
-
-
-
+                <a class=" flex lg:hidden justify-center  items-center normal-case text-xl">
+                    <img class="w-7 lg:w-auto" src="./images/logo.png" alt="">
+                    </img>
+                    <h1 class="font-bold text-2xl lg:text-[2.5rem] lg:text-white">Fruit Burst</h1>
+                </a>
             </div>
-            <div class="navbar-start hidden lg:flex  justify-between text-white text-lg font-medium">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About us </a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All fruit</a></li>
-                </ul>
-            </div>
-            <!-- logo  -->
-            <a class="flex justify-center items-center  gap-2" href="">
-                <img class=" w-7 lg:w-auto" src="./images/logo.png" alt="">
-                </img>
-                <h1 class="font-bold text-2xl lg:text-[2.5rem] lg:text-white">Fruit Burst</h1>
-            </a>
-            <!-- search bar  -->
-            <div class=" hidden lg:block md:hidden ">
-                <input type="search" placeholder="Search here"
-                    class="input input-bordered w-full max-w-2xl border-none " />
-                <div class="absolute top-[2.3rem] right-16 pr-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
-                            stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+            <div class="flex justify-between relative ">
+                <a class=" nav-start flex justify-center hidden lg:flex items-center normal-case text-xl absolute left-[40%]">
+                    <img class="w-7 lg:w-auto" src="./images/logo.png" alt="">
+                    </img>
+                    <h1 class="font-bold text-2xl lg:text-[2.5rem] lg:text-white">Fruit Burst</h1>
+                </a>
+
+                <div class="navbar-center justify-center items-center text-white hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About us </a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruit</a></li>
+                    </ul>
+                </div>
+                <div class=" hidden lg:flex">
+                    <!-- Search bar -->
+
+                    <div>
+                        <input type="search" placeholder="Search here"
+                            class="input input-bordered  w-full max-w-2xl border-none" />
+                        <div class="absolute top-[1rem] right-[0.5rem] pr-2 ">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #bdbfc2;"></i>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- banner  -->
 
         <!-- carousal  -->
-        <div class="carousel w-full mt-3 rounded-lg z-10  ">
+        <div class="carousel w-full mt-3 rounded-lg z-10 mx-0 ">
             <div id="slide1" class="carousel-item relative h-48 lg:h-auto w-full mix-blend-multiply bg-slate-600 ">
                 <img src="./images/banner1.png" class="w-full mix-blend-multiply bg-black  " />
                 <div
@@ -148,9 +154,9 @@
                 </div>
             </div>
             <div id="slide4" class="carousel-item relative w-full mix-blend-multiply bg-slate-600">
-                <img src="./images/banner4.png" class="w-full mix-blend-multiply bg-black " />
+                <img src="./images/banner4.png" class="w-full " />
                 <div
-                class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
+                    class="text-center text-white absolute lg:top-1/4 mt-2 space-y-2  w-52 lg:w-[660px] lg:right-[50%] left-1/4 mx-auto lg:px-16">
                     <h1 class="text-2xl lg:text-7xl font-extrabold lg:mb-6">Exotic tastes at your doorstep</h1>
                     <p class="font-medium text-sm lg:text-xl">We supply highly quality organic products</p>
                     <button class="bg-primary-clr px-8 py-4 rounded-lg mt-6">Shop Now</button>
@@ -205,8 +211,10 @@
         <div class=" flex flex-col lg:flex-row justify-between mt-4 lg:mt-[120px]">
             <!-- text-part  -->
             <div class="flex-1 lg:w-auto">
-                <h1 class="text-xl text-center lg:text-left lg:text-5xl font-extrabold mb-3 lg:mb-6">Deal of the day</h1>
-                <p class="text-sm text-center lg:text-left lg:text-base ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                <h1 class="text-xl text-center lg:text-left lg:text-5xl font-extrabold mb-3 lg:mb-6">Deal of the day
+                </h1>
+                <p class="text-sm text-center lg:text-left lg:text-base ">Contrary to popular belief, is not simply
+                    random text. It has roots in a piece of classical
                     Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <!-- clock-part -->
@@ -240,7 +248,8 @@
             </div>
         </div>
         <!-- fruit card  -->
-        <div class="grid  lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-3 mx-2 mt-12 border-r rounded-lg border-[#12121221] border-2  lg:border-none">
+        <div
+            class="grid  lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-3 mx-2 mt-12 border-r rounded-lg border-[#12121221] border-2  lg:border-none">
             <!-- card1  -->
             <div class="card  bg-base-100 shadow-xl text-center    pt-12 ">
                 <figure><img src="./images/fruit6.png" alt="apple" /></figure>
@@ -453,7 +462,8 @@
                 <div class="hero-content text-center text-neutral-content flex-col">
                     <div class="max-w-md">
                         <h1 class="mb-5 mt-3 text-xl lg:text-5xl font-extrabold text-white">Meet the team section</h1>
-                        <p class="mb-5 text-sm lg:text-base text-white">Contrary to popular belief, is not simply random text. It has roots
+                        <p class="mb-5 text-sm lg:text-base text-white">Contrary to popular belief, is not simply random
+                            text. It has roots
                             in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                     </div>
                     <div class=" grid grid-cols-1 lg:grid-cols-4 gap-20">
@@ -717,14 +727,16 @@
         <section class=" mx-3 mt-12">
             <div class="text-center mx-auto">
                 <h1 class=" text-xl lg:text-5xl font-extrabold mb-6">Why Choose Us</h1>
-                <p class="text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                <p class="text-sm lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a
+                    piece of classical Latin
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-12 ">
 
                 <!-- text-card 1 -->
                 <div class="space-y-10">
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
@@ -735,7 +747,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div> <!-- text-card 1 -->
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
                             <i class="fa-brands fa-gratipay" style="color: #b8b8b8;"></i>
@@ -746,7 +759,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div> <!-- text-card 1 -->
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
                             <i class="fa-solid fa-gift" style="color: #bcbdbd;"></i>
@@ -766,7 +780,8 @@
 
                 <!-- text card 2  -->
                 <div class="space-y-10">
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
@@ -777,7 +792,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div> <!-- text-card 1 -->
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center ">
                             <!-- icon  -->
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
@@ -788,7 +804,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div> <!-- text-card 1 -->
-                    <div class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
+                    <div
+                        class="flex flex-col lg:flex-row lg:justify-center items-center space-y-6 lg:space-y-0 space-x-6">
                         <div class="p-4 rounded-full shadow-lg bg-white text-center">
                             <!-- icon  -->
                             <i class="fa-solid fa-users" style="color: #b9bcc1;"></i>
